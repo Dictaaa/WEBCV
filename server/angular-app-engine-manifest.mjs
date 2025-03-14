@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/davidcortes',
+  basePath: '/WEBCV',
   supportedLocales: {
   "en-US": ""
 },

@@ -2,19 +2,19 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/davidcortes/',
+  baseHref: '/WEBCV/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/davidcortes"
+    "route": "/WEBCV"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 24263, hash: 'be7e5396552ce212af440be11c62ee2e02a83495ed57e35c9f64a33084d0c0b0', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 17783, hash: 'f601bdf362b360729cd89c518671d3e5fc86def55e258789223a42f5d563c221', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 63974, hash: 'b2c0777aa8cf6ea4e1c58dc12aefb5929f9470ff4b8406f58feac9c938bb8e55', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 24257, hash: 'cff01529873d92382fc3335286647f2fea91aa6d0b95a34e6897aff80e7bb480', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 17777, hash: '3f0ab323a7762c8ade91aa84b95c537400d6a0c6e6949ee886ad7636dde48cb8', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 63968, hash: '3864394e9f9c7ed692f17affbffef9497ad2d9fce7c1c2f5d5f4ab611f4e5d18', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-VXAFEE25.css': {size: 7096, hash: '8Ll5p7Yo0qE', text: () => import('./assets-chunks/styles-VXAFEE25_css.mjs').then(m => m.default)}
   },
 };
