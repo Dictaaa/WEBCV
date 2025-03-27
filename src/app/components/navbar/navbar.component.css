@@ -9,5 +9,5 @@
   }
 
   .shadow-navbar {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra cuando se baja */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Sombra cuando se baja */
   }

@@ -3,8 +3,19 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+body { background-color:black; }
+
+
 
 html {
     scroll-behavior: smooth;
+  }
+  
+  .amarillo {
+    color: yellow !important;
+  }
+  
+  .morado {
+    color: purple !important;
   }
   

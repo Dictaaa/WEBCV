@@ -2,18 +2,18 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HomeComponent } from "./components/home/home.component";
-import { AboutComponent } from "./components/about/about.component";
+//import { AboutComponent } from "./components/about/about.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HomeComponent, AboutComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   host: { 'ngSkipHydration': '' } 
 })
 export class AppComponent {
   constructor(private el: ElementRef) {}
-  @ViewChild(AboutComponent) aboutComponent!: AboutComponent;
+  //@ViewChild(AboutComponent) aboutComponent!: AboutComponent;
   @HostListener('window:scroll', [])
   onScroll(): void {
     const aboutSection = this.el.nativeElement.querySelector('#about');
@@ -26,7 +26,7 @@ export class AppComponent {
       if (position < windowHeight) {
         firstRow.style.opacity = '1';
         firstRow.style.transform = 'translateY(0)';
-        this.aboutComponent.activateProgressBars();
+        //this.aboutComponent.activateProgressBars();
       }
     }
   }

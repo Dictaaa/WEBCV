@@ -15,7 +15,7 @@ import { Skill } from '../../models/skill';
 })
 export class HomeComponent implements OnInit {
   skills: Skill[] = [];
-  textoCompleto: string = "Desarrollador Full Stack";
+  textoCompleto: string = "Desarrollador_Full_Stack(){}";
   textoMostrado: string = ""; 
   velocidad: number = 100; 
 
@@ -26,10 +26,20 @@ export class HomeComponent implements OnInit {
     this.skills = this.skillService.getSkills();
   }
 
-  private async iniciarAnimacion() {
+   private async iniciarAnimacion() {
     this.textoMostrado = ""; 
-    for (let i = 0; i < this.textoCompleto.length; i++) {
-      this.textoMostrado += this.textoCompleto.charAt(i);
+    const parteAmarilla = "Desarrollador_Full_Stack";
+    const parteMorada = "(){}";
+
+    let textoHTML = `<span class="amarillo"></span><span class="morado"></span>`;
+
+    for (let i = 0; i <= this.textoCompleto.length; i++) {
+      if (i <= parteAmarilla.length) {
+        textoHTML = `<span class="amarillo">${parteAmarilla.substring(0, i)}</span><span class="morado"></span>`;
+      } else {
+        textoHTML = `<span class="amarillo">${parteAmarilla}</span><span class="morado">${parteMorada.substring(0, i - parteAmarilla.length)}</span>`;
+      }
+      this.textoMostrado = textoHTML;
       await this.delay(this.velocidad);
     }
   }

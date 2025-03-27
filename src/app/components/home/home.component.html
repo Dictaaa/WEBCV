@@ -2,10 +2,11 @@
   <div class="row justify-content-center w-100 mt-5 py-5">
     <div class="col-md-9 p-4">
       <div class="d-flex flex-column align-items-start gap-2">
-      <h1 class="tittle fw-bold">👋🏻Hola, soy David Cortes</h1>
+      <h1 class="tittle fw-bold text-light">👋🏻Hola, soy David Cortes</h1>
       <br>
-      <h2 class="fw-bold typewriter">{{ textoMostrado }}</h2>
-      <span class="">Con experiencia en el desarrollo de aplicaciones web y sistemas dinámicos. Me especializo en la integración de APIs, optimización de interfaces y automatización de procesos para mejorar la experiencia del usuario y la funcionalidad del software, enfocándome en soluciones eficientes y escalables.</span>
+      <h1 class="fw-bold typewriter text-break" [innerHTML]="textoMostrado"></h1>
+
+      <span class="text-light">Con experiencia en el desarrollo de aplicaciones web y sistemas dinámicos. Me especializo en la integración de APIs, optimización de interfaces y automatización de procesos para mejorar la experiencia del usuario y la funcionalidad del software, enfocándome en soluciones eficientes y escalables.</span>
       <div class="row w-100 d-flex flex-wrap">
         <div class="col-auto mb-2" *ngFor="let skill of skills; let i = index">
           <div class="card skill-card p-2 d-flex align-items-center">
@@ -24,12 +25,9 @@
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
         <button class="btn btn-gmail" (click)="abrirCorreo()">
-          <svg class="svg-default" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="29" viewBox="0 0 50 50"
-            style="fill:#1A1A1A;">
-            <path
-              d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z">
-            </path>
-          </svg>
+          <svg class="svg-default" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="29" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path></g></g>
+            </svg>
 
           <svg class="svg-hover" xmlns="http://www.w3.org/2000/svg" width="22" height="29" viewBox="0 0 48 48">
             <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
@@ -42,13 +40,24 @@
             </path>
           </svg>
         </button>
+        <a href="https://wa.me/+573154789845" target="_blank" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="assets/pdf/CV_DAVID_CORTES.pdf" download="CV_DAVID_CORTES.pdf" target="_blank" class="btn btn-cv">
+          <span class="cv-default">CV</span>
+          <div class="cv-hover"><i class="fa-solid fa-download"></i></div>
+        </a>
+       
       </div>
     </div>
       <!-- <div class="d-flex flex-column align-items-start gap-2"> -->
 
     </div>
-    <div class="col-md-3 text-white p-4">
-      <img src="assets/images/developergif.gif" alt="Desarrollador Full Stack" width="400">
+    <div class="col-md-3 text-white p-4 d-flex justify-content-center">
+      <div class="imagen-con-degradado">
+        <img src="assets/images/davidcortes.png" alt="Desarrollador Full Stack" >
+      </div>
     </div>
+    
   </div>
 </div>
