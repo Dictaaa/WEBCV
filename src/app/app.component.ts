@@ -2,13 +2,15 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HomeComponent } from "./components/home/home.component";
+import { MatrixBackgroundComponent } from "./matrix-background.component";
 //import { AboutComponent } from "./components/about/about.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HomeComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent, MatrixBackgroundComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],
+
   host: { 'ngSkipHydration': '' } 
 })
 export class AppComponent {
@@ -30,6 +32,6 @@ export class AppComponent {
       }
     }
   }
-  
+   currentYear: number = new Date().getFullYear();
   title = 'dicta';
 }

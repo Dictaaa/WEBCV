@@ -15,7 +15,7 @@ import { Skill } from '../../models/skill';
 })
 export class HomeComponent implements OnInit {
   skills: Skill[] = [];
-  textoCompleto: string = "Desarrollador_Full_Stack(){}";
+  textoCompleto: string = "Full_Stack_Developer(){}";
   textoMostrado: string = ""; 
   velocidad: number = 100; 
 
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 
    private async iniciarAnimacion() {
     this.textoMostrado = ""; 
-    const parteAmarilla = "Desarrollador_Full_Stack";
+    const parteAmarilla = "Full_Stack_Developer";
     const parteMorada = "(){}";
 
     let textoHTML = `<span class="amarillo"></span><span class="morado"></span>`;
