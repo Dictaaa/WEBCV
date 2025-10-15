@@ -176,24 +176,7 @@
 }
 
 .imagen-con-degradado img {
-  border-radius: 50%;
-  box-shadow: 0 0 25px rgba(131, 56, 236, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.imagen-con-degradado img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
-}
-
-.imagen-con-degradado::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30%; /* Ajusta la altura del degradado */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-  pointer-events: none; /* Permite que la imagen siga siendo interactuable */
 }
 
 
